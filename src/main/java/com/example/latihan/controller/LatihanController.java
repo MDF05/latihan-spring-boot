@@ -22,4 +22,14 @@ public class LatihanController {
 
         return ListString;
     }
+
+    @GetMapping("/tambahan")
+    public static List<String> getDataTambahan() {
+        List<String> ListDataTambahan = new ArrayList<String>();
+        for(int a = 0; a < 10; a++) {
+            ListDataTambahan.add("tugas tambahan " + a);
+        }
+
+        return ListDataTambahan;
+    }
 }
